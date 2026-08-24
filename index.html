@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kosi Udeh — Developer & Systems Architect</title>
+  <meta name="description" content="Personal site and portfolio of Kosi Udeh (Udeh Kosisochukwu Emmanuel). Building multi-tenant web platforms, autonomous multi-agent runtimes, and embedded robotics.">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Kosi Udeh — Developer & Systems Architect">
+  <meta property="og:description" content="Personal site and portfolio of Kosi Udeh. Full-stack development, multi-agent systems, and embedded robotics.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="site-header">
+      <a href="/" class="brand-link">
+        <span class="status-dot" title="Available for engineering roles"></span>
+        <span>Kosi Udeh</span>
+      </a>
+
+      <div class="header-right">
+        <button id="cmd-trigger" class="cmd-trigger-btn" title="Command Menu">⌘K</button>
+        <button id="theme-toggle" class="theme-toggle-btn">🌙 dark</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Intro / Bio -->
+      <section class="intro-section">
+        <h1 class="intro-title">Full-stack developer & systems architect.</h1>
+        <p class="intro-p">
+          I’m <strong>Kosi Udeh</strong> (Udeh Kosisochukwu Emmanuel). I build multi-tenant web platforms, autonomous multi-agent operating systems, and embedded robotics. Currently studying Computer Science at <strong>Afe Babalola University (ABUAD)</strong> in Nigeria.
+        </p>
+        <p class="intro-p">
+          I care about structural simplicity, strict data isolation, zero-dependency frontend performance, and bridging software engineering with physical computing.
+        </p>
+
+        <div class="quick-links">
+          <a href="https://github.com/Kosis0" target="_blank" rel="noopener noreferrer" class="link-chip">github.com/Kosis0 ↗</a>
+          <a href="https://wa.me/2349117950895" target="_blank" rel="noopener noreferrer" class="link-chip">whatsapp ↗</a>
+          <a href="mailto:kosiudeh627@gmail.com" class="link-chip">kosiudeh627@gmail.com</a>
+          <a href="tel:+2347071070282" class="link-chip">+234 707 107 0282</a>
+          <a href="#" class="link-chip open-cv-btn">resume (pdf)</a>
+        </div>
+      </section>
+
+      <!-- Selected Projects -->
+      <section class="section">
+        <span class="section-label">Selected Work</span>
+
+        <div class="project-list">
+          <!-- 1. Agentic OS -->
+          <article class="project-item">
+            <div class="project-topline">
+              <a href="https://github.com/Kosis0" target="_blank" rel="noopener noreferrer" class="project-name">
+                Agentic OS v2 <span>↗</span>
+              </a>
+              <span class="project-meta-tag">Multi-Agent System</span>
+            </div>
+            <p class="project-desc">
+              An LLM-powered multi-agent operating system bridging autonomous agent swarms to a hyper-responsive React 19 desktop shell. Features an event-sourced Python FastAPI micro-kernel, wavefront DAG task scheduler, 4-tier memory bus (L1 Core to L3 vector embeddings), and HMAC-signed least-agency HITL governance.
+            </p>
+            <div class="project-stack">
+              <span class="stack-item">React 19</span>
+              <span class="stack-item">FastAPI</span>
+              <span class="stack-item">TypeScript</span>
+              <span class="stack-item">SQLite Vectors</span>
+              <span class="stack-item">MCP</span>
+            </div>
+            <div class="project-links-row">
+              <a href="https://github.com/Kosis0" target="_blank" rel="noopener noreferrer" class="text-link">GitHub Repository</a>
+            </div>
+          </article>
+
+          <!-- 2. Nexus ERP -->
+          <article class="project-item">
+            <div class="project-topline">
+              <a href="https://github.com/Kosis0/Company-Portal" target="_blank" rel="noopener noreferrer" class="project-name">
+                Nexus ERP & ESS Command Center <span>↗</span>
+              </a>
+              <span class="project-meta-tag">Enterprise Portal</span>
+            </div>
+            <p class="project-desc">
+              Employee Self-Service portal and HR command center engineered with zero UI framework dependencies. Includes real-time shift clock-in timers, entitlement leave quota approvals, executive workforce analytics, payslip PDF generation, and strict role-based access control (RBAC).
+            </p>
+            <div class="project-stack">
+              <span class="stack-item">React 19</span>
+              <span class="stack-item">Vite</span>
+              <span class="stack-item">Vanilla CSS Tokens</span>
+              <span class="stack-item">RBAC Auth</span>
+              <span class="stack-item">REST APIs</span>
+            </div>
+            <div class="project-links-row">
+              <a href="https://github.com/Kosis0/Company-Portal" target="_blank" rel="noopener noreferrer" class="text-link">GitHub: Company-Portal</a>
+            </div>
+          </article>
+
+          <!-- 3. Mercato -->
+          <article class="project-item">
+            <div class="project-topline">
+              <a href="https://github.com/Kosis0/multi-tenant-ecommerce" target="_blank" rel="noopener noreferrer" class="project-name">
+                Mercato Multi-Tenant E-Commerce <span>↗</span>
+              </a>
+              <span class="project-meta-tag">E-Commerce Platform</span>
+            </div>
+            <p class="project-desc">
+              Performant multi-tenant e-commerce platform with dynamic tenant subrouting (<span style="font-family: var(--font-mono); font-size: 0.85em;">/[tenant]</span>), isolated merchant database partitions, custom inventory categories, flash sale countdown engines, and dual-currency Stripe checkout supporting Naira (₦) and USD ($).
+            </p>
+            <div class="project-stack">
+              <span class="stack-item">Next.js 16</span>
+              <span class="stack-item">Express.js</span>
+              <span class="stack-item">Supabase PostgreSQL</span>
+              <span class="stack-item">JWT</span>
+              <span class="stack-item">Stripe</span>
+            </div>
+            <div class="project-links-row">
+              <a href="https://github.com/Kosis0/multi-tenant-ecommerce" target="_blank" rel="noopener noreferrer" class="text-link">GitHub: multi-tenant-ecommerce</a>
+            </div>
+          </article>
+
+          <!-- 4. RecordKeeper API -->
+          <article class="project-item">
+            <div class="project-topline">
+              <a href="https://github.com/Kosis0/RecordKeeperAPI" target="_blank" rel="noopener noreferrer" class="project-name">
+                Cloud RecordKeeper API <span>↗</span>
+              </a>
+              <span class="project-meta-tag">REST API</span>
+            </div>
+            <p class="project-desc">
+              Production cloud REST API built with FastAPI, SQLAlchemy ORM, SQLite/PostgreSQL, JWT token auth, and Bcrypt password hashing. Fully tested with comprehensive automated test suites and interactive Swagger UI documentation.
+            </p>
+            <div class="project-stack">
+              <span class="stack-item">Python</span>
+              <span class="stack-item">FastAPI</span>
+              <span class="stack-item">SQLAlchemy</span>
+              <span class="stack-item">JWT / Bcrypt</span>
+              <span class="stack-item">Pytest</span>
+            </div>
+            <div class="project-links-row">
+              <a href="https://github.com/Kosis0/RecordKeeperAPI" target="_blank" rel="noopener noreferrer" class="text-link">GitHub: RecordKeeperAPI</a>
+            </div>
+          </article>
+
+          <!-- 5. Autonomous Robotics -->
+          <article class="project-item">
+            <div class="project-topline">
+              <span class="project-name">Autonomous Robotics Platform</span>
+              <span class="project-meta-tag">Embedded Systems</span>
+            </div>
+            <p class="project-desc">
+              Prototyped and programmed autonomous obstacle-avoidance vehicles using Arduino microcontrollers, custom electronic circuits, ultrasonic sensor arrays, and motor PWM drivers. Developed Python UART telemetry scripts for real-time serial logging and performance metrics.
+            </p>
+            <div class="project-stack">
+              <span class="stack-item">C++</span>
+              <span class="stack-item">Arduino</span>
+              <span class="stack-item">PWM Actuators</span>
+              <span class="stack-item">Python Telemetry</span>
+              <span class="stack-item">UART Serial</span>
+            </div>
+          </article>
+
+          <!-- 6. Local Service Landing -->
+          <article class="project-item">
+            <div class="project-topline">
+              <a href="https://github.com/Kosis0/local-service-landing-page" target="_blank" rel="noopener noreferrer" class="project-name">
+                Local Service Web Architecture <span>↗</span>
+              </a>
+              <span class="project-meta-tag">Frontend Architecture</span>
+            </div>
+            <p class="project-desc">
+              High-converting local service web platform built with React 18, TypeScript, Tailwind CSS, and Lucide icons. Optimized for maximum performance, accessibility, and 100/100 Google Lighthouse metrics.
+            </p>
+            <div class="project-stack">
+              <span class="stack-item">React 18</span>
+              <span class="stack-item">TypeScript</span>
+              <span class="stack-item">Tailwind CSS</span>
+              <span class="stack-item">Vite</span>
+            </div>
+            <div class="project-links-row">
+              <a href="https://github.com/Kosis0/local-service-landing-page" target="_blank" rel="noopener noreferrer" class="text-link">GitHub: local-service-landing-page</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Technical Toolbox -->
+      <section class="section">
+        <span class="section-label">Toolbox & Stack</span>
+
+        <div class="stack-grid">
+          <div class="stack-cat-label">Languages</div>
+          <div class="stack-cat-items"><strong>TypeScript</strong>, JavaScript (ES6+), <strong>Python</strong>, C++, SQL (PostgreSQL, SQLite), HTML5, CSS3</div>
+
+          <div class="stack-cat-label">Frontend</div>
+          <div class="stack-cat-items"><strong>React 19</strong>, Next.js, Vite, Tailwind CSS, CSS Custom Properties, Responsive Layouts</div>
+
+          <div class="stack-cat-label">Backend</div>
+          <div class="stack-cat-items"><strong>FastAPI</strong>, Node.js, Express, <strong>Supabase / PostgreSQL</strong>, REST APIs, JWT, Bcrypt</div>
+
+          <div class="stack-cat-label">Embedded</div>
+          <div class="stack-cat-items"><strong>Arduino</strong>, Microcontrollers, Sensor Integration (HC-SR04), Motor PWM Drivers, UART Telemetry</div>
+
+          <div class="stack-cat-label">Tools</div>
+          <div class="stack-cat-items">Git, GitHub, VS Code, Vercel, Render, Pytest, Docker/Wasm sandboxes</div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section">
+        <span class="section-label">Education</span>
+
+        <div class="edu-entry">
+          <div class="edu-title">B.Sc. in Computer Science</div>
+          <div class="edu-school">Afe Babalola University (ABUAD) • In Progress • Nigeria</div>
+          <p class="edu-desc">
+            Core focus: Algorithms & Data Structures, Software Engineering, Object-Oriented Programming (OOP), Computer Systems Architecture, Database Management Systems.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section">
+        <span class="section-label">Connect</span>
+
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1rem;">
+          I’m open to engineering roles, systems architecture contracts, and robotics collaborations. Reach out directly:
+        </p>
+
+        <div class="contact-list">
+          <div class="contact-row">
+            <span class="contact-type">WhatsApp</span>
+            <a href="https://wa.me/2349117950895" target="_blank" rel="noopener noreferrer" class="contact-val">+234 911 795 0895 ↗</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-type">Phone</span>
+            <a href="tel:+2347071070282" class="contact-val">+234 707 107 0282 ↗</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-type">Email</span>
+            <a href="mailto:kosiudeh627@gmail.com" class="contact-val">kosiudeh627@gmail.com ↗</a>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-type">GitHub</span>
+            <a href="https://github.com/Kosis0" target="_blank" rel="noopener noreferrer" class="contact-val">github.com/Kosis0 ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <span>© 2026 Kosi Udeh</span>
+      <a href="#" class="open-cv-btn" style="color: inherit; text-decoration: underline;">Curriculum Vitae</a>
+    </footer>
+  </div>
+
+  <!-- Command Palette Modal -->
+  <div id="cmd-backdrop" class="cmd-dialog-backdrop">
+    <div class="cmd-dialog">
+      <div class="cmd-input-box">
+        <span style="color: var(--text-dim); font-family: var(--font-mono); font-size: 0.85rem;">&gt;</span>
+        <input type="text" id="cmd-input" class="cmd-input" placeholder="Type a command or jump to..." autocomplete="off">
+      </div>
+      <ul class="cmd-list">
+        <li class="cmd-item" data-action="theme">
+          <span>Toggle Theme</span>
+          <span class="cmd-item-shortcut">T</span>
+        </li>
+        <li class="cmd-item" data-action="copy-email">
+          <span>Copy Email Address</span>
+          <span class="cmd-item-shortcut">kosiudeh627@gmail.com</span>
+        </li>
+        <li class="cmd-item" data-action="whatsapp">
+          <span>Open WhatsApp Chat</span>
+          <span class="cmd-item-shortcut">+2349117950895</span>
+        </li>
+        <li class="cmd-item" data-action="github">
+          <span>Visit GitHub Profile</span>
+          <span class="cmd-item-shortcut">@Kosis0</span>
+        </li>
+        <li class="cmd-item" data-action="resume">
+          <span>View Printable Resume</span>
+          <span class="cmd-item-shortcut">PDF</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Resume Modal -->
+  <div id="cv-modal-overlay" class="modal-overlay">
+    <div class="modal-box">
+      <button id="cv-modal-close" class="modal-close-btn" aria-label="Close">✕</button>
+
+      <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--text-main); padding-bottom: 0.75rem; margin-bottom: 1.25rem;">
+        <div>
+          <h2 style="font-size: 1.4rem; font-weight: 700; color: var(--text-main);">UDEH KOSISOCHUKWU EMMANUEL</h2>
+          <div style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.2rem;">Full-Stack Developer & Systems Architect</div>
+        </div>
+        <button onclick="window.print()" class="theme-toggle-btn">🖨️ Print / PDF</button>
+      </div>
+
+      <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem; font-family: var(--font-mono);">
+        Nigeria • English (Native) • +234 911 795 0895 • kosiudeh627@gmail.com • github.com/Kosis0
+      </div>
+
+      <section style="margin-bottom: 1.25rem;">
+        <h3 style="font-size: 0.95rem; font-weight: 700; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Professional Summary</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+          Results-driven Computer Science undergraduate with hands-on experience designing full-stack web applications, multi-tenant enterprise software architectures, autonomous multi-agent operating systems, and embedded hardware solutions. Proficient in TypeScript, JavaScript, Python, C++, and modern frameworks including Next.js, React 19, FastAPI, and Node.js.
+        </p>
+      </section>
+
+      <section style="margin-bottom: 1.25rem;">
+        <h3 style="font-size: 0.95rem; font-weight: 700; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Technical Skills</h3>
+        <p style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.6;">
+          <strong>Languages:</strong> JavaScript (ES6+), TypeScript, Python, C++, SQL, HTML5, CSS3<br>
+          <strong>Web & Backend:</strong> React 19, Next.js, FastAPI, Node.js, Express, RESTful APIs, Supabase PostgreSQL, SQLite<br>
+          <strong>Embedded:</strong> Arduino C++, Microcontrollers, Sensor Integration, PWM Actuators, Python UART Telemetry<br>
+          <strong>Tools:</strong> Git, GitHub, VS Code, Vercel, Render, Vite, Docker/Wasm
+        </p>
+      </section>
+
+      <section style="margin-bottom: 1.25rem;">
+        <h3 style="font-size: 0.95rem; font-weight: 700; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Key Projects</h3>
+        
+        <div style="margin-bottom: 0.75rem;">
+          <div style="display: flex; justify-content: space-between; font-weight: 600; font-size: 0.88rem;">
+            <span>Agentic OS v2 — Multi-Agent Operating System</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);">Lead Developer</span>
+          </div>
+          <ul style="margin-left: 1.25rem; font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">
+            <li>Built an event-sourced Python FastAPI micro-kernel with a wavefront DAG task scheduler and append-only EventBus.</li>
+            <li>Implemented a 4-tier memory bus and least-agency security governance matrix with HMAC-SHA256 human-in-the-loop approval tokens.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 0.75rem;">
+          <div style="display: flex; justify-content: space-between; font-weight: 600; font-size: 0.88rem;">
+            <span>Nexus ERP & Employee Self-Service Command Center</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);">Full-Stack Developer</span>
+          </div>
+          <ul style="margin-left: 1.25rem; font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">
+            <li>Architected an Employee Self-Service portal with role-based access control (RBAC), shift clock-in timers, and PDF payslip generation.</li>
+            <li>Engineered zero-dependency responsive frontend interfaces with pure CSS variables and modular backend endpoints.</li>
+          </ul>
+        </div>
+
+        <div style="margin-bottom: 0.75rem;">
+          <div style="display: flex; justify-content: space-between; font-weight: 600; font-size: 0.88rem;">
+            <span>Mercato Multi-Tenant E-Commerce Platform</span>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim);">Full-Stack Developer</span>
+          </div>
+          <ul style="margin-left: 1.25rem; font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">
+            <li>Engineered dynamic tenant subrouting (/[tenant]) and isolated merchant database partitions using Supabase PostgreSQL.</li>
+            <li>Integrated Stripe checkout supporting Naira (₦) and USD ($).</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h3 style="font-size: 0.95rem; font-weight: 700; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">Education</h3>
+        <div style="font-size: 0.85rem; font-weight: 600;">B.Sc. in Computer Science — Afe Babalola University (ABUAD)</div>
+        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">Core coursework: Algorithms, Software Engineering, OOP, Database Systems, Computer Architecture.</div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
