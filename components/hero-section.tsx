@@ -1,4 +1,4 @@
-import { MessageSquare, ArrowDown, FolderOpen, Mail, Phone } from "lucide-react"
+import { MessageSquare, ArrowDown, FolderOpen, Mail, Phone, Github } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -16,10 +16,26 @@ export function HeroSection() {
           </h1>
 
           <p className="text-[#393939] text-[16px] md:text-[18px] font-medium leading-[28px] md:leading-[32px] max-w-xl">
-            Computer Science Undergraduate at <strong>Afe Babalola University (ABUAD)</strong>. Engineering scalable multi-tenant web platforms, autonomous multi-agent operating environments, and embedded robotics.
+            Computer Science Undergraduate at <strong>Afe Babalola University (ABUAD)</strong> & Software Engineering Intern at <strong>Gokly Oil and Gas Services</strong>. Engineering scalable multi-tenant platforms, autonomous multi-agent operating environments, and embedded robotics.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-2">
+            <a
+              href="#portfolio"
+              className="inline-flex items-center justify-center gap-2 bg-[#2F81F7] text-white border-4 border-black hover:bg-[#2563eb] rounded-xl py-4 px-6 md:py-5 md:px-8 text-base md:text-lg font-bold shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-transform active:translate-x-1 active:translate-y-1"
+            >
+              <FolderOpen className="w-5 h-5" />
+              Explore Engineered Systems
+            </a>
+            <a
+              href="https://github.com/Kosis0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-white border-4 border-black hover:bg-gray-50 rounded-xl py-4 px-6 md:py-5 md:px-8 text-base md:text-lg font-bold text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-transform active:translate-x-1 active:translate-y-1"
+            >
+              <Github className="w-5 h-5" />
+              GitHub (@Kosis0) ↗
+            </a>
             <a
               href="https://wa.me/2349117950895"
               target="_blank"
@@ -28,13 +44,6 @@ export function HeroSection() {
             >
               <MessageSquare className="w-5 h-5" />
               Chat on WhatsApp
-            </a>
-            <a
-              href="#portfolio"
-              className="inline-flex items-center justify-center gap-2 bg-white border-4 border-black hover:bg-gray-50 rounded-xl py-4 px-6 md:py-5 md:px-8 text-base md:text-lg font-bold text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-transform active:translate-x-1 active:translate-y-1"
-            >
-              <FolderOpen className="w-5 h-5" />
-              Explore Systems
             </a>
           </div>
 

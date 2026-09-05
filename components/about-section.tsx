@@ -14,16 +14,16 @@ export function AboutSection() {
         <div className="space-y-6 md:space-y-8">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 leading-tight">
-              Architecting solid software & <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">physical computing</span>
+              Architecting solid software & <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">energy systems</span>
             </h2>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-              I am a Computer Science undergraduate at <strong>Afe Babalola University (ABUAD)</strong> with proven experience engineering full-stack platforms, autonomous multi-agent operating systems, and embedded robotics.
+              I am a Computer Science undergraduate at <strong>Afe Babalola University (ABUAD)</strong> and Software Engineering Intern at <strong>Gokly Oil and Gas Services</strong>, previously interning at <strong>Rolof Institute of Management & Technology (Warri)</strong>. I engineer production-grade multi-tenant web platforms, industrial energy portals, autonomous multi-agent operating systems, and embedded robotics.
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-white border-3 border-black p-4 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center">
-              <div className="text-2xl md:text-3xl font-extrabold text-[#2F81F7]">6+</div>
+              <div className="text-2xl md:text-3xl font-extrabold text-[#2F81F7]">8+</div>
               <div className="text-xs font-bold text-gray-700 uppercase">Production Systems</div>
             </div>
             <div className="bg-white border-3 border-black p-4 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center">

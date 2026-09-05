@@ -105,11 +105,12 @@ export function Footer() {
             <div>
               <h4 className="font-bold text-white mb-4 text-base">Featured Work</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="https://github.com/Kosis0" target="_blank" rel="noopener noreferrer" className="hover:text-white">Agentic OS v2</a></li>
-                <li><a href="https://github.com/Kosis0/Company-Portal" target="_blank" rel="noopener noreferrer" className="hover:text-white">Nexus ERP & ESS</a></li>
-                <li><a href="https://github.com/Kosis0/multi-tenant-ecommerce" target="_blank" rel="noopener noreferrer" className="hover:text-white">Mercato E-Commerce</a></li>
-                <li><a href="https://github.com/Kosis0/RecordKeeperAPI" target="_blank" rel="noopener noreferrer" className="hover:text-white">RecordKeeper API</a></li>
-                <li><a href="https://github.com/Kosis0/local-service-landing-page" target="_blank" rel="noopener noreferrer" className="hover:text-white">Local Service Landing</a></li>
+                <li><a href="https://github.com/Kosis0/agentic-os" target="_blank" rel="noopener noreferrer" className="hover:text-white">Agentic OS v2 ↗</a></li>
+                <li><a href="https://github.com/Kosis0/tradepro-trading-platform" target="_blank" rel="noopener noreferrer" className="hover:text-white">TradePro Platform ↗</a></li>
+                <li><a href="https://github.com/Kosis0/valence-energy-terminal" target="_blank" rel="noopener noreferrer" className="hover:text-white">Valence Energy Terminal ↗</a></li>
+                <li><a href="https://github.com/Kosis0/Company-Portal" target="_blank" rel="noopener noreferrer" className="hover:text-white">Nexus ERP & ESS ↗</a></li>
+                <li><a href="https://github.com/Kosis0/multi-tenant-ecommerce" target="_blank" rel="noopener noreferrer" className="hover:text-white">Mercato E-Commerce ↗</a></li>
+                <li><a href="https://github.com/Kosis0/RecordKeeperAPI" target="_blank" rel="noopener noreferrer" className="hover:text-white">RecordKeeper API ↗</a></li>
               </ul>
             </div>
 

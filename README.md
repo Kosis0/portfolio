@@ -1,90 +1,78 @@
-# Kosi Udeh — Personal Portfolio (`KOSI.DEV`)
+# ⚡ Kosi Udeh — Developer & Systems Architect Portfolio
 
-> Full-Stack Developer & Systems Architect | Computer Science Undergraduate at Afe Babalola University (ABUAD).
+[![Live Site](https://img.shields.io/badge/Live%20Portfolio-portfolio--lac--seven--pykd0ipign.vercel.app-black?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-lac-seven-pykd0ipign.vercel.app)
+[![React 19](https://img.shields.io/badge/React-19.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![Next.js](https://img.shields.io/badge/Next.js-15.5-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![GitHub](https://img.shields.io/badge/GitHub-@Kosis0-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kosis0)
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)](https://react.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=flat-square&logo=vercel)](https://vercel.com/)
+The personal portfolio and engineered systems journal of **Kosi Udeh (Udeh Kosisochukwu Emmanuel)**. Featuring production architectures spanning autonomous multi-agent operating systems, financial execution terminals, distributed multi-tenant databases, and embedded robotics.
 
----
-
-## 🌟 Overview
-
-A high-performance editorial and neo-brutalist portfolio engineered with **Next.js 15**, **React 19**, and **Tailwind CSS**. Built with zero artificial fluff, 100% vector/illustration assets, and comprehensive data modeling for full-stack and systems engineering projects.
-
-### Direct Channels
-- **WhatsApp**: [+234 911 795 0895](https://wa.me/2349117950895)
-- **Direct Phone**: [+234 707 107 0282](tel:+2347071070282)
-- **Email**: [kosiudeh627@gmail.com](mailto:kosiudeh627@gmail.com)
-- **GitHub**: [github.com/Kosis0](https://github.com/Kosis0)
+👉 **Live URL:** [https://portfolio-lac-seven-pykd0ipign.vercel.app](https://portfolio-lac-seven-pykd0ipign.vercel.app)
 
 ---
 
-## 🚀 Running Locally
+## 🏛️ Featured Systems Roster
 
-### 1. Prerequisites
-- **Node.js** v18+ (Node v20 or v24 recommended)
-- **npm** or **pnpm**
+Every project links directly to its dedicated, verified public repository:
 
-### 2. Installation
-Clone the repository and install dependencies:
+| Project | Specialization | Architecture Highlights | Repository |
+| :--- | :--- | :--- | :--- |
+| **Agentic OS v2** | Autonomous AI Systems | FastAPI micro-kernel, wavefront DAG task scheduler, 4-tier vector memory bus, HMAC-signed least-agency HITL governance | [Kosis0/agentic-os](https://github.com/Kosis0/agentic-os) |
+| **TradePro** | Fintech & Trading Terminal | Live order book depth, leverage calculators, multi-market screener, zero-FOUC design tokens | [Kosis0/tradepro-trading-platform](https://github.com/Kosis0/tradepro-trading-platform) |
+| **Valence Energy** | Industrial Telemetry | High-density operations terminal, commodities ticker, ESG scoring, sub-100ms dashboard re-renders | [Kosis0/valence-energy-terminal](https://github.com/Kosis0/valence-energy-terminal) |
+| **Nexus ERP & ESS** | Enterprise Architecture | Zero-bloat UI engineering, real-time shift clocking, client-side PDF payslips, 5-tier RBAC | [Kosis0/Company-Portal](https://github.com/Kosis0/Company-Portal) |
+| **Mercato** | Distributed Cloud Systems | Dynamic tenant subrouting (`/[tenant]`), isolated PostgreSQL schemas, dual-currency Stripe checkout | [Kosis0/multi-tenant-ecommerce](https://github.com/Kosis0/multi-tenant-ecommerce) |
+| **RecordKeeper API** | Backend Reliability | FastAPI, SQLAlchemy ORM, JWT token auth, Bcrypt, 100% Pytest test coverage | [Kosis0/RecordKeeperAPI](https://github.com/Kosis0/RecordKeeperAPI) |
+| **Apex Local Service** | High-Performance Web | 99+ Lighthouse performance, interactive before/after split slider, instant WhatsApp quote dispatch | [Kosis0/local-service-landing-page](https://github.com/Kosis0/local-service-landing-page) |
+| **QueenGold Showroom** | Luxury Commerce | 60fps micro-interactions, dynamic multi-currency converter, VIP concierge workflows | [Kosis0/queengold-luxury-showroom](https://github.com/Kosis0/queengold-luxury-showroom) |
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+- **Core Framework**: [Next.js 15](https://nextjs.org/) (App Router) & [React 19](https://react.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) & Radix UI primitives
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Analytics**: Vercel Analytics
+- **Dual Formats**: Includes both the Next.js Paperfolio application and an ultra-minimalist, zero-dependency static build (`index.html` + `generate_portfolio.py`).
+
+---
+
+## 🚀 Local Development Setup
 
 ```bash
+# Clone repository
 git clone https://github.com/Kosis0/portfolio.git
 cd portfolio
-npm install --legacy-peer-deps
+
+# Install dependencies
+pnpm install
+
+# Start local dev server
+pnpm dev
+
+# Build for production
+pnpm build
 ```
 
-*(Or if using pnpm: `pnpm install`)*
-
-### 3. Start Development Server
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the live portfolio.
-
-### 4. Production Build
-```bash
-npm run build
-npm start
-```
+Open **http://localhost:3000** to view your local development server.
 
 ---
 
-## ☁️ Deploying to Vercel (1-Click)
-
-### Option A: Via Vercel Dashboard (Recommended)
-1. Go to [vercel.com](https://vercel.com) and log in with your GitHub account.
-2. Click **"Add New..."** → **"Project"**.
-3. Select your **`portfolio`** repository from GitHub (`Kosis0/portfolio`).
-4. Keep the default framework preset (**Next.js**).
-5. Click **"Deploy"**.
-6. In ~60 seconds, your site will be live at `https://portfolio-kosis0.vercel.app` (or your custom domain).
-
-### Option B: Via Vercel CLI
-```bash
-npm i -g vercel
-vercel
-```
-
-Follow the interactive prompts to link and deploy.
+## 🧑‍💻 Author
+**Kosi Udeh (Udeh Kosisochukwu Emmanuel)**  
+*Full-Stack Developer & Systems Architect*  
+* **Portfolio:** [portfolio-lac-seven-pykd0ipign.vercel.app](https://portfolio-lac-seven-pykd0ipign.vercel.app)  
+* **GitHub:** [@Kosis0](https://github.com/Kosis0)  
+* **Email:** [kosiudeh627@gmail.com](mailto:kosiudeh627@gmail.com)  
+* **WhatsApp:** [+234 911 795 0895](https://wa.me/2349117950895)  
+* **Phone:** [+234 707 107 0282](tel:+2347071070282)
 
 ---
 
-## 🏗️ Architecture & Core Projects
+## 📜 License
+Distributed under the **MIT License**. See `LICENSE` for details.
 
-1. **Agentic OS v2**: LLM-powered multi-agent desktop shell with Python FastAPI micro-kernel, wavefront DAG task scheduler, and 4-tier vector memory bus.
-2. **Nexus ERP & ESS Command Center**: Enterprise Employee Self-Service portal with real-time shift clock-in timers, leave quotas, and automated client-side PDF payslips.
-3. **Mercato Multi-Tenant E-Commerce**: Multi-tenant marketplace platform with dynamic tenant routing (`/[tenant]`), isolated PostgreSQL schemas, and dual-currency Stripe checkout.
-4. **Secure Cloud Record Keeping REST API**: FastAPI, SQLAlchemy ORM, SQLite/PostgreSQL, JWT token auth, Bcrypt, and automated pytest suite.
-5. **Autonomous Robotics & Microcontroller Platform**: Obstacle-avoidance vehicle with Arduino microcontroller C++, ultrasonic sensor arrays, PWM motor drivers, and Python UART telemetry.
-6. **High-Converting Local Service Web Architecture**: React 18, TypeScript, Tailwind CSS, and Lucide icons (100/100 Lighthouse score).
-
----
-
-## 📄 License & Copyright
-
-© 2026 Udeh Kosisochukwu Emmanuel. All rights reserved.

@@ -1,4 +1,776 @@
-<!DOCTYPE html>
+# -*- coding: utf-8 -*-
+import os
+import shutil
+
+BASE_DIR = r"C:\Users\kosiu\Desktop\Work\portfolio"
+TARGET_DIR = r"C:\Users\kosiu\Desktop\portfolio"
+
+os.makedirs(os.path.join(BASE_DIR, "css"), exist_ok=True)
+os.makedirs(os.path.join(BASE_DIR, "js"), exist_ok=True)
+os.makedirs(os.path.join(TARGET_DIR, "css"), exist_ok=True)
+os.makedirs(os.path.join(TARGET_DIR, "js"), exist_ok=True)
+
+# -----------------------------------------------------------------------------
+# 1. css/style.css — Human-Crafted Editorial Minimalist Styles
+# -----------------------------------------------------------------------------
+STYLE_CSS = """/* ==========================================================================
+   Kosi Udeh — Personal Portfolio & Engineering Journal
+   Design: Clean Editorial Minimalist • Human-Crafted • 0% Fluff
+   ========================================================================== */
+
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f9fafb;
+  --bg-surface: #ffffff;
+  --bg-hover: #f3f4f6;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --text-dim: #9ca3af;
+  --border: #e5e7eb;
+  --border-subtle: #f3f4f6;
+  --accent: #111827;
+  --accent-blue: #2563eb;
+  --accent-emerald: #10b981;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, Menlo, Monaco, Consolas, monospace;
+  --max-w: 680px;
+}
+
+[data-theme="dark"] {
+  --bg: #0c0c0e;
+  --bg-subtle: #141417;
+  --bg-surface: #18181c;
+  --bg-hover: #1f1f24;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --text-dim: #6b7280;
+  --border: #27272a;
+  --border-subtle: #1e1e22;
+  --accent: #f3f4f6;
+  --accent-blue: #60a5fa;
+  --accent-emerald: #34d399;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  padding-bottom: 5rem;
+}
+
+::selection {
+  background: var(--text-main);
+  color: var(--bg);
+}
+
+.wrapper {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   Header
+   -------------------------------------------------------------------------- */
+.site-header {
+  padding: 3rem 0 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--accent-emerald);
+  display: inline-block;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.theme-toggle-btn, .cmd-trigger-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.15s ease;
+}
+
+.theme-toggle-btn:hover, .cmd-trigger-btn:hover {
+  color: var(--text-main);
+  border-color: var(--text-muted);
+  background: var(--bg-subtle);
+}
+
+/* --------------------------------------------------------------------------
+   Hero / Intro
+   -------------------------------------------------------------------------- */
+.intro-section {
+  margin-bottom: 3.5rem;
+}
+
+.intro-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  margin-bottom: 0.85rem;
+}
+
+.intro-p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.intro-p strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.link-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  color: var(--text-main);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.link-chip:hover {
+  background: var(--text-main);
+  color: var(--bg);
+  border-color: var(--text-main);
+}
+
+/* --------------------------------------------------------------------------
+   Sections Shared
+   -------------------------------------------------------------------------- */
+.section {
+  margin-bottom: 3.5rem;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Project Entries (Clean, substance-first list)
+   -------------------------------------------------------------------------- */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.project-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.project-topline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-main);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.project-name:hover {
+  color: var(--accent-blue);
+}
+
+.project-meta-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.project-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.stack-item {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  background: var(--bg-subtle);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+}
+
+.project-links-row {
+  display: flex;
+  gap: 0.85rem;
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
+}
+
+.text-link {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.text-link:hover {
+  color: var(--accent-blue);
+  text-decoration-color: var(--accent-blue);
+}
+
+/* --------------------------------------------------------------------------
+   Interactive Systems Showcase (Subtle, Real Demo)
+   -------------------------------------------------------------------------- */
+.demo-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.demo-tabs {
+  display: flex;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0.35rem 0.5rem;
+  gap: 0.25rem;
+  overflow-x: auto;
+}
+
+.demo-tab-btn {
+  background: none;
+  border: none;
+  padding: 0.35rem 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  border-radius: var(--radius);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.demo-tab-btn.active {
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.demo-pane {
+  display: none;
+  padding: 1.25rem;
+}
+
+.demo-pane.active {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Skills / Stack Minimal Table
+   -------------------------------------------------------------------------- */
+.stack-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.stack-cat-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  padding-top: 0.1rem;
+}
+
+.stack-cat-items {
+  color: var(--text-muted);
+}
+
+.stack-cat-items strong {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   Education & Background
+   -------------------------------------------------------------------------- */
+.edu-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.edu-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.edu-school {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.edu-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   Contact Lines
+   -------------------------------------------------------------------------- */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.contact-type {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.contact-val {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.contact-val:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+/* --------------------------------------------------------------------------
+   Command Palette (Cmd+K)
+   -------------------------------------------------------------------------- */
+.cmd-dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 5000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+.cmd-dialog-backdrop.open {
+  display: flex;
+}
+
+.cmd-dialog {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.cmd-input-box {
+  display: flex;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  gap: 0.5rem;
+}
+
+.cmd-input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.cmd-list {
+  list-style: none;
+  padding: 0.5rem;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.cmd-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.cmd-item:hover, .cmd-item.selected {
+  background: var(--bg-subtle);
+  color: var(--text-main);
+}
+
+.cmd-item-shortcut {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+/* --------------------------------------------------------------------------
+   Printable Resume Document
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 4000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+.modal-box {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 680px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.toast {
+  background: var(--text-main);
+  color: var(--bg);
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+"""
+
+# -----------------------------------------------------------------------------
+# 2. js/main.js — Clean, Minimal, Fast Scripts (Cmd+K, Theme, Copy)
+# -----------------------------------------------------------------------------
+MAIN_JS = """/**
+ * Kosi Udeh — Minimal Editorial Script
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
+  initCommandPalette();
+  initDemoTabs();
+  initCopyActions();
+  initCvModal();
+});
+
+/* 1. Theme Switcher */
+function initTheme() {
+  const toggleBtn = document.getElementById('theme-toggle');
+  const saved = localStorage.getItem('kosi_theme') || 'light';
+  document.documentElement.setAttribute('data-theme', saved);
+  updateThemeBtn(saved);
+
+  toggleBtn?.addEventListener('click', () => {
+    const curr = document.documentElement.getAttribute('data-theme');
+    const next = curr === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('kosi_theme', next);
+    updateThemeBtn(next);
+  });
+}
+
+function updateThemeBtn(theme) {
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.textContent = theme === 'dark' ? '☀️ light' : '🌙 dark';
+}
+
+/* 2. Command Palette (Cmd+K) */
+function initCommandPalette() {
+  const backdrop = document.getElementById('cmd-backdrop');
+  const triggerBtn = document.getElementById('cmd-trigger');
+  const input = document.getElementById('cmd-input');
+  const items = document.querySelectorAll('.cmd-item');
+
+  function openCmd() {
+    backdrop?.classList.add('open');
+    input?.focus();
+  }
+
+  function closeCmd() {
+    backdrop?.classList.remove('open');
+    if (input) input.value = '';
+    filterItems('');
+  }
+
+  triggerBtn?.addEventListener('click', openCmd);
+  backdrop?.addEventListener('click', (e) => {
+    if (e.target === backdrop) closeCmd();
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      if (backdrop?.classList.contains('open')) closeCmd();
+      else openCmd();
+    }
+    if (e.key === 'Escape' && backdrop?.classList.contains('open')) {
+      closeCmd();
+    }
+  });
+
+  input?.addEventListener('input', (e) => {
+    filterItems(e.target.value.toLowerCase());
+  });
+
+  function filterItems(query) {
+    items.forEach(item => {
+      const text = item.textContent?.toLowerCase() || '';
+      item.style.display = text.includes(query) ? 'flex' : 'none';
+    });
+  }
+
+  items.forEach(item => {
+    item.addEventListener('click', () => {
+      const action = item.dataset.action;
+      if (action === 'theme') {
+        document.getElementById('theme-toggle')?.click();
+      } else if (action === 'copy-email') {
+        copyText('kosiudeh627@gmail.com', 'Copied kosiudeh627@gmail.com');
+      } else if (action === 'whatsapp') {
+        window.open('https://wa.me/2349117950895', '_blank');
+      } else if (action === 'github') {
+        window.open('https://github.com/Kosis0', '_blank');
+      } else if (action === 'resume') {
+        document.getElementById('cv-modal-overlay')?.classList.add('open');
+      }
+      closeCmd();
+    });
+  });
+}
+
+/* 3. Demo Tabs */
+function initDemoTabs() {
+  const btns = document.querySelectorAll('.demo-tab-btn');
+  const panes = document.querySelectorAll('.demo-pane');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      panes.forEach(p => p.classList.remove('active'));
+
+      btn.classList.add('active');
+      const target = document.getElementById(btn.dataset.tab);
+      if (target) target.classList.add('active');
+    });
+  });
+}
+
+/* 4. Copy Actions & Toast */
+function initCopyActions() {
+  document.querySelectorAll('.copy-trigger').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const val = el.dataset.copy;
+      if (val) copyText(val, `Copied ${val}`);
+    });
+  });
+}
+
+function copyText(text, msg) {
+  navigator.clipboard.writeText(text).then(() => {
+    showToast(msg);
+  });
+}
+
+function showToast(msg) {
+  let container = document.querySelector('.toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'toast-container';
+    document.body.appendChild(container);
+  }
+  const t = document.createElement('div');
+  t.className = 'toast';
+  t.textContent = msg;
+  container.appendChild(t);
+  setTimeout(() => t.remove(), 2500);
+}
+
+/* 5. CV Modal */
+function initCvModal() {
+  const overlay = document.getElementById('cv-modal-overlay');
+  const openBtns = document.querySelectorAll('.open-cv-btn');
+  const closeBtn = document.getElementById('cv-modal-close');
+
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      overlay?.classList.add('open');
+    });
+  });
+
+  closeBtn?.addEventListener('click', () => overlay?.classList.remove('open'));
+  overlay?.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.classList.remove('open');
+  });
+}
+"""
+
+# -----------------------------------------------------------------------------
+# 3. index.html — Clean, Human-Crafted, High-Signal Markup
+# -----------------------------------------------------------------------------
+INDEX_HTML = """<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
@@ -528,3 +1300,23 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+"""
+
+# Write all files to BASE_DIR and TARGET_DIR
+files_map = {
+    os.path.join(BASE_DIR, "css", "style.css"): STYLE_CSS,
+    os.path.join(BASE_DIR, "js", "main.js"): MAIN_JS,
+    os.path.join(BASE_DIR, "index.html"): INDEX_HTML,
+
+    os.path.join(TARGET_DIR, "css", "style.css"): STYLE_CSS,
+    os.path.join(TARGET_DIR, "js", "main.js"): MAIN_JS,
+    os.path.join(TARGET_DIR, "index.html"): INDEX_HTML,
+}
+
+for path, content in files_map.items():
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"Successfully generated: {path}")
+
+print("Clean, human-crafted editorial portfolio generated successfully!")
+
