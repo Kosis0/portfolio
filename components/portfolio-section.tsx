@@ -166,7 +166,7 @@ export function PortfolioSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group grid md:grid-cols-2 bg-white border-[3px] border-black rounded-[32px] overflow-hidden hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] transition-all"
+              className="group grid md:grid-cols-2 bg-white border-[3px] border-black rounded-[32px] overflow-hidden transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]"
             >
               <div className="p-6 md:p-12 flex flex-col justify-between bg-white">
                 <div>
@@ -204,7 +204,7 @@ export function PortfolioSection() {
                         href={project.repo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 bg-black text-white hover:bg-[#2F81F7] transition-colors text-sm md:text-base font-bold px-5 py-2.5 rounded-xl border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5"
+                        className="inline-flex items-center gap-2 bg-black text-white hover:bg-[#2F81F7] transition-colors text-sm md:text-base font-bold px-5 py-2.5 rounded-xl border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2"
                       >
                         <Github className="w-4 h-4" />
                         <span>Inspect Repository</span>
@@ -227,6 +227,7 @@ export function PortfolioSection() {
                 <img
                   src={project.illustration}
                   alt={project.title}
+                  loading="lazy"
                   className="w-4/5 h-auto object-contain max-h-[300px] transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
